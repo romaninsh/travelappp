@@ -4,6 +4,6 @@
 	$form->setModel(new client($db));
 	$form->onSubmit(function($form) {
 		$form->model->save();
-		return $form->success('Have a great vacation, '.$form->model['name'].' !');
+		return $form->success('Have a great vacation, '.$form->model['name'].' !!!');
 			
 	});
