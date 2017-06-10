@@ -9,16 +9,16 @@
 		}
 		else {
 			if ($form->client['name']=='') {
-				return $form->error('name','You must fill this field!');
+				return $form->error('name',"You must fill this field!");
 			}
 			if ($form->client['surname']=='') {
-				return $form->error('surname','You must fill this field!');
+				return $form->error('surname',"You must fill this field!");
 			}
 			if ($form->client['email']=='') {
-				return $form->error('email','You must fill this field!');
+				return $form->error('email',"You must fill this field!");
 			}	
 			if ($form->client['destination']=='') {
-				return $form->error('destination','You must fill this field!');
+				return $form->error('destination',"You must fill this field!");
 			}
 		}
 	});
