@@ -21,4 +21,7 @@
 				return $form->error('destination',"You must fill this field!");
 			}
 		}  */
+		$back=$app->layout->add('Button');
+		$back->set('Back');
+		$back->link('index.php');
 	});
