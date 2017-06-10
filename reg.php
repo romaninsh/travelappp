@@ -20,5 +20,5 @@
 			if ($form->client['destination']==NULL) {
 				return $form->error('destination',"You must fill this field!");
 			}
-		}
+		}  */
 	});
