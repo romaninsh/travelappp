@@ -3,7 +3,7 @@
 	$form=$app->layout->add('Form');
 	$form->setModel(new client($db));
 	$form->onSubmit(function($form) {
-		if ($form->'name'<>"") and ($form->'surname'<>"") and ($form->'email'<>"") and ($form->'vacation'<>"") {
+		if ($form->name<>"") and ($form->surname<>"") and ($form->email<>"") and ($form->vacation<>"") {
 		$form->model->save();
 		return $form->success('Have a great vacation, '.$form->model['name'].' !!!');
 		}
