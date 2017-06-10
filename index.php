@@ -1,24 +1,8 @@
 <?php
-	require 'init.php';
-	$form=$app->layout->add('Form');
-	$form->setModel(new client($db));
-	$form->onSubmit(function($form) {
-		if ($form->client['name']<>'' and $form->client['surname']<>'' and $form->client['email']<>'' and $form->client['destination']<>'') {
-			$form->model->save();
-			return $form->success('Have a great vacation, '.$form->model['name'].' !!!');
-		}
-		else {
-			if ($form->client['name']=='') {
-				return $form->error('name',"You must fill this field!");
-			}
-			if ($form->client['surname']=='') {
-				return $form->error('surname',"You must fill this field!");
-			}
-			if ($form->client['email']=='') {
-				return $form->error('email',"You must fill this field!");
-			}	
-			if ($form->client['destination']=='') {
-				return $form->error('destination',"You must fill this field!");
-			}
-		}
-	});
+require 'init.php';
+$reg=$app->layout->add('Button');
+$reg->set('For clients');
+$reg->link('reg.php');
+$manager=$app->layout->add('Button');
+$manager->set('For managers');
+$manager->link('manager.php');
