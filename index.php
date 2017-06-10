@@ -4,8 +4,8 @@
 	$form->setModel(new client($db));
 	$form->onSubmit(function($form) {
 		if ($form->client['name']<>'') and ($form->client['surname']<>'') and ($form->client['email']<>'') and ($form->client['destination']<>'') {
-		$form->model->save();
-		return $form->success('Have a great vacation, '.$form->model['name'].' !!!');
+			$form->model->save();
+			return $form->success('Have a great vacation, '.$form->model['name'].' !!!');
 		}
 		else {
 			if ($form->client['name']=='') {
