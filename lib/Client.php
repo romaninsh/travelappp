@@ -1,6 +1,6 @@
 <?php
 
-class client extends \atk4\data\Model
+class Client extends \atk4\data\Model
 {
     public $table = 'client';
 
