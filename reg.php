@@ -1,4 +1,5 @@
 <?php
+
 require 'init.php';
 $form = $app->layout->add('Form');
     $form->setModel(new client($db));
