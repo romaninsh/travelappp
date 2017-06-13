@@ -1,6 +1,6 @@
 <?php
-    require 'init.php';
-    $form = $app->layout->add('Form');
+require 'init.php';
+$form = $app->layout->add('Form');
     $form->setModel(new client($db));
     $form->onSubmit(function ($form) {
         //		if ($form->client['name']<>NULL and $form->client['surname']<>NULL and $form->client['email']<>NULL and $form->client['destination']<>NULL) {
