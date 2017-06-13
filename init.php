@@ -1,6 +1,5 @@
 <?php
 require 'vendor/autoload.php';
-require 'cfg.htaccess';
 
 //New app//
 $app=new \atk4\ui\App('Travelappp');
