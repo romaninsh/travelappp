@@ -25,5 +25,6 @@
 	});
 	
 	$back=$app->layout->add('Button');
+	echo '<br>';
 	$back->set('Back');
 	$back->link('index.php');
